@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: cyan;
     margin: 0;
     padding: 0;
 }
 
 header, nav, footer {
-    background-color: #333;
+    background-color: gray;
     color: white;
     padding: 1em;
 }
@@ -19,7 +19,7 @@ nav a {
 
 main {
     padding: 20px;
-    background-color: white;
+    background-color: cyan;
     margin: 20px;
 }
 
@@ -164,4 +164,5 @@ main {
   
 footer {
     text-align: center;
+    background-color: gray;
 }

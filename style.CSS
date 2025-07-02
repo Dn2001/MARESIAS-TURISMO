@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, footer {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+}
+
+.promocoes {
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .promocoes h1 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #e53935;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .preco {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .preco span {
+    color: #d32f2f;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  button {
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #b71c1c;
+  }
+  .faq {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .faq h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007acc;
+  }
+  
+  .faq-item {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+    overflow: hidden;
+  }
+  
+  .faq-question {
+    display: block;
+    padding: 15px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-question:hover {
+    background-color: #e6f0ff;
+  }
+  
+  /* Checkbox escondido */
+  .faq-item input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* Resposta escondida por padrão */
+  .faq-answer {
+    max-height: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    background-color: #f9f9f9;
+    font-weight: normal;
+    line-height: 1.5;
+  }
+  
+  /* Quando o checkbox estiver marcado, mostra a resposta */
+  .faq-item input[type="checkbox"]:checked ~ .faq-answer {
+    max-height: 200px; /* suficiente para o texto */
+    padding: 15px 20px;
+  }
+  
+  /* Adicionar símbolo [+] e [–] nas perguntas */
+  .faq-question::after {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    font-size: 1.5em;
+    line-height: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-item input[type="checkbox"]:checked + .faq-question::after {
+    content: "−";
+  }
+  
+footer {
+    text-align: center;
+}
